@@ -20,8 +20,6 @@
 
 
 ---
-
-
 1. Scope and functions of the project:
     1. Starting from 1.07.2020 to the current date, the project is under development
     2. The project consists of modules such as:
@@ -35,48 +33,38 @@
           
     3. Functions: 
     
-        a. Landing
+   a. Landing
     
             a. Provide complete information about books
-    
-                1. Title, authors, year of issue, image, description, etc.
-                
+                1. Title, authors, year of issue, image, description, etc.    
             b. Search for books by keywords
-    
                 1. Simple search
                 2. Advanced Search
-    
             c. Search for resources and other materials other than books
             d. Filtering by languages, dates, types of materials
     
-        b. Administration 
+   b. Administration 
     
-            a. Cataloging  
+       a. Cataloging  
                 a. Book registration:  
-    
                     a. Filling in information about incoming books 
                     b. Fill in all fields according to the format and standard  MARC21
-                    c. Checking for the correctness of the entered data 
-                     
-        b. Picking  
-    
+                    c. Checking for the correctness of the entered data  
+       b. Picking  
                 a. CRUD operations and search for:
-    
                     a. Batch of books (Batch)
                     b. Instance and copy (Item)
                     c. Publisher (Publisher)
                     d. The supplier (Supplier)
-    
-        c. Service
+   c. Service
     
                 a. Finding Users and Customers (Students and Staff)
                 b. Displaying user data
                 c. Issuing books to users
                 d. Control of the period of issue and the date of return of books
-        d. Reports
+   d. Reports
     
                 a. Output of reports in .pdf, .csv format
-    
                    a. Inventory books
                    b. Frequently read books
                    c. Attendance (Virtual and Offline)

@@ -1,4 +1,119 @@
 # Stage 2, 3
+[Mind Map](Phase 3/mindmap.pdf)
+Objective of the project:
+Make an online catalog of books for the library of the SDU University
+Automate internal processes (work) of the library and librarians
+User service: a service for issuing books
+Problems and solutions:
+Unavailability of the book catalog during quarantine
+Make an online catalog for users with a list of all books and resources from the library
+Routine work of librarians:
+Buying books and registering them
+Entering book information into the database
+Issuance and control of books
+Process reports, books
+Automate processes (picking, cataloging)
+
+Scope and functions of the project:
+Starting from 1.07.2020 to the current date, the project is under development
+The project consists of modules such as:
+Landing
+Administration
+Cataloging
+Picking
+Service
+Reports
+Functions:
+Landing
+Provide complete information about books
+Title, authors, year of issue, image, description, etc.
+Search for books by keywords
+Simple search
+Advanced Search
+Search for resources and other materials other than books
+Filtering by languages, dates, types of materials
+Administration
+Cataloging
+Book registration:
+Filling in information about incoming books
+Fill in all fields according to the format and standard MARC21
+Checking for the correctness of the entered data
+Picking
+CRUD operations and search for:
+Batch of books (Batch)
+Instance and copy (Item)
+Publisher (Publisher)
+The supplier (Supplier)
+Service
+Finding Users and Customers (Students and Staff)
+Displaying user data
+Issuing books to users
+Control of the period of issue and the date of return of books
+Reports
+Output of reports in .pdf, .csv format
+Inventory books
+Frequently read books
+Attendance (Virtual and Offline)
+History of books
+KSU and Stat. report
+
+Interface and reasons for choosing:
+Project interface - Web application
+We decided to make it a web application, since quarantine measures against covid-19 are currently underway around the world. To access the library remotely, the web version of the project is the most suitable option for both users and librarians.
+
+Programming language and database
+Programming language:
+Backend part - PHP, Laravel
+Front end part - JS, Vue js
+Database - Oracle database
+Описание:
+We chose this stack for project implementations, since all projects within the university have the same stacks.
+Database: University uses Oracle database
+The database server works separately from the server where the project is deployed
+Database connections go through hostname / ip-address: port: sid using username, password, database name.
+Since the project is implemented on the Laravel framework, we use the ready-made yajra / oracle-oci8 library and php oci8 extension to connect to the Oracel database and build sql queries using the ORM built into the framework itself (Query builder, Eloquent builder)
+
+Stage 3
+Questions:
+What information does our library contain about books?
+[dataset1.csv](Phase 3/dataset1.csv)
+Are there other types of materials besides books in the library?
+[dataset2.csv](Phase 3/dataset2.csv)
+[dataset3.csv](Phase 3/dataset3.csv)
+How are the books themselves and copies of books stored?
+[dataset4.csv](Phase 3/dataset4.csv)
+What keywords are used to search for books?
+Title
+Author
+ISBN/ISSN
+Publisher
+Call Number
+What are Book Batches?
+[dataset5.csv](Phase 3/dataset5.csv)
+How are logs saved from each action in the library?
+[dataset6.csv](Phase 3/dataset6.csv)
+How is attenuation controlled in the library?
+[dataset7.csv](Phase 3/dataset7.csv)
+Library service: Book lending
+[dataset8.csv](Phase 3/dataset8.csv)
+What are copies of books?
+[dataset4.csv](Phase 3/dataset4.csv)
+What is the difference between batches and instances?
+A batch of books is the book itself with additional. information. A copy is a copy of a book. For example: The library received one batch of books with 100 copies.
+What reports does the library have?
+[dataset9.csv](Phase 3/dataset9.csv)
+What are book publishers?
+[dataset10.csv](Phase 3/dataset10.csv)
+What are book providers?
+[dataset11.csv](Phase 3/dataset11.csv)
+Who are our users?
+Students
+Employees
+What roles and accesses (permissions) does the library have?
+User (Only has access to Landing)
+Admin - Librarian (Has access to the Admin)
+
+
 
 ### Stage 2
 [Mind Map](Phase 3/mindmap.pdf)
